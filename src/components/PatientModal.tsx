@@ -7,7 +7,7 @@ interface PatientModalProps {
 
 export default function PatientModal({patient, onClose}: PatientModalProps) {
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-center">
             <div className="bg-white p-6 rounded shadow-md w-96">
                 <h2 className="text-xl font-bold mb-4">{patient.name}</h2>
                 <p><strong>Procedure:</strong>{patient.procedure}</p>

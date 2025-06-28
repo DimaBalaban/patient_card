@@ -13,7 +13,7 @@ export default function PatientCard({patient}: PatientCardProps) {
     return (
         <>
             <div
-                className="bg-blue-100 rounded shadow-md p-4 transform transition-all duration-300 ease-in-out hover:scale-105 ">
+                className="bg-blue-100 rounded shadow-md p-4 transform transition-transform duration-300 ease-in-out  hover:scale-105 opacity-0 animate-fade-in-soft ">
                 {/*<div className="bg-blue-100 rounded shadow-md p-4">*/}
                 <div className="text-lg font-semibold">{patient.name}</div>
                 <div className="text-sm text-gray-500">{patient.procedure}</div>

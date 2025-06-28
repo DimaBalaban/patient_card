@@ -6,13 +6,13 @@ module.exports = {
     theme: {
         extend: {
             keyframes: {
-                'fade-in': {
-                    '0%': {opacity: 0, transform: 'translateY(20px)'},
-                    '100%': {opacity: 1, transform: 'translateY(0)'},
+                'fade-in-soft': {
+                    '0%': {opacity: 0, transform: 'blur(5px)'},
+                    '100%': {opacity: 1, transform: 'blur(0)'},
                 },
             },
             animation: {
-                'fade-in': 'fade-in 0.4s ease-out forwards',
+                'fade-in-soft': 'fade-in-soft 0.5s ease-out forwards',
             },
         },
     },
